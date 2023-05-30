@@ -93,7 +93,7 @@
   <div id="celebration-page">
     <div id="celebration-content">
       <h1>Congratulations!</h1>
-      <p>You have reached 100 points!</p>
+      <p>You just wasted around 30 mins on this stupid game!!</p>
       <button id="btn_continue">Continue Playing</button>
     </div>
   </div>
@@ -104,7 +104,7 @@
     var grid = 16;
     var count = 0;
     var score = 0;
-    var velocity = 1; // Initial velocity of the snake
+    var velocity = 4; // Initial velocity of the snake
 
     // Reading the last score value from local storage
     if (localStorage.score) {
@@ -253,7 +253,7 @@
 
     // Check if the player has reached 100 points
     function checkScore() {
-      if (score === 10) {
+      if (score === 100) {
         // Show the celebrating page
         document.getElementById('celebration-page').style.display = 'flex';
         stopGame(); // Stop the game when reaching 100 points
